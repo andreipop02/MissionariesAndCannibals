@@ -1,0 +1,10 @@
+
+
+DFS :: 
+
+50.00s A fost depasita limita de timp de: 50.00s
+No of Expanded Nodes: 64318
+No of Explored Nodes: 482454
+Nu exista solutie
+
+ Timp de rulare DFS: 50014.72ms
