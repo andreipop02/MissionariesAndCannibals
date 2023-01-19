@@ -43,7 +43,7 @@ def result(node, action):
     return (m+m2, c+c2, b2)
 
 
-def dfs():
+def functie():
     initial_state = (3, 5, 'stânga')
     initial_node = Node(initial_state)
     frontier = [initial_node]
@@ -61,7 +61,7 @@ def dfs():
     return None
 
 
-node = dfs()
+node = functie()
 if node is None:
     print("Nu există soluție.")
 else:

@@ -22,17 +22,17 @@ def genPossibleMoves(CAP_BOAT):
 	return moves
 
 
-def runDFS(g, INITIAL_STATE):
-	sys.stdout = open("outDFS.txt", "w")
-	print("\n\nDFS :: \n")
+def runFunctie(g, INITIAL_STATE):
+	sys.stdout = open("outFunctie.txt", "w")
+	print("\n\nFunctie :: \n")
 	start_time = time.time()
-	p = g.DFS(INITIAL_STATE)
+	p = g.Functie(INITIAL_STATE)
 	end_time = time.time()
 	if len(p):
 		g.printPath(p, TERMINAL_STATE)
 	else:
 		print("Nu exista solutie")
-	print("\n Timp de rulare DFS: %.2fms" % ((end_time - start_time)*1000))
+	print("\n Timp de rulare Functie: %.2fms" % ((end_time - start_time)*1000))
 
 
 def main():
@@ -59,10 +59,10 @@ def main():
 
 	g = Graph()
 	sys.stdout = CON_OUT
-	print("\nRulam DFS>")
-	runDFS(g, INITIAL_STATE)
+	print("\nRulam Functia>")
+	runFunctie(g, INITIAL_STATE)
 	sys.stdout = CON_OUT
-	print("DFS a fost rulat>")
+	print("Functia a fost rulata>")
 
 
 if __name__ == '__main__':

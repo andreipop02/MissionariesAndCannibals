@@ -1,0 +1,56 @@
+
+
+Functie :: 
+
+No of Expanded Nodes: 12
+No of Explored Nodes: 15
+
+
+
+< Nr.Miscari:0 State (3, 3, 1, 0, 0) >
+
+ luam 1 misionari si 1 canibali din partea stanga in partea dreapta a raului.
+
+< Nr.Miscari:1 State (2, 2, 0, 1, 1) >
+
+ luam 1 misionari si 0 canibali din partea dreapta in partea stanga a raului.
+
+< Nr.Miscari:2 State (3, 2, 1, 0, 1) >
+
+ luam 0 misionari si 2 canibali din partea stanga in partea dreapta a raului.
+
+< Nr.Miscari:3 State (3, 0, 0, 0, 3) >
+
+ luam 0 misionari si 1 canibali din partea dreapta in partea stanga a raului.
+
+< Nr.Miscari:4 State (3, 1, 1, 0, 2) >
+
+ luam 2 misionari si 0 canibali din partea stanga in partea dreapta a raului.
+
+< Nr.Miscari:5 State (1, 1, 0, 2, 2) >
+
+ luam 1 misionari si 1 canibali din partea dreapta in partea stanga a raului.
+
+< Nr.Miscari:6 State (2, 2, 1, 1, 1) >
+
+ luam 2 misionari si 0 canibali din partea stanga in partea dreapta a raului.
+
+< Nr.Miscari:7 State (0, 2, 0, 3, 1) >
+
+ luam 0 misionari si 1 canibali din partea dreapta in partea stanga a raului.
+
+< Nr.Miscari:8 State (0, 3, 1, 3, 0) >
+
+ luam 0 misionari si 2 canibali din partea stanga in partea dreapta a raului.
+
+< Nr.Miscari:9 State (0, 1, 0, 3, 2) >
+
+ luam 1 misionari si 0 canibali din partea dreapta in partea stanga a raului.
+
+< Nr.Miscari:10 State (1, 1, 1, 2, 2) >
+
+ luam 1 misionari si 1 canibali din partea stanga in partea dreapta a raului.
+
+< Nr.Miscari:11 State (0, 0, 0, 3, 3) >
+
+ Timp de rulare Functie: 0.00ms

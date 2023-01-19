@@ -9,38 +9,36 @@ class Graph:
 
 	def __init__(self):
 
-		self.bfs_parent = {}
-		self.dfs_parent = {}
+		self._parent = {}
 
-		self.expandedBFS = 0
-		self.expandedDFS = 0
+		self.expanded = 0
 
-	def DFS(self, s):
-		self.expandedDFS = 0
-		self.dfs_parent[s] = None
+	def Functie(self, s):
+		self.expanded = 0
+		self._parent[s] = None
 		visited = {(s.missionaries, s.cannibals, s.dir): True}
 
 		start_time = time.time()
 		stack = [s]
 		while stack:
 			u = stack.pop()
-			self.expandedDFS += 1
+			self.expanded += 1
 
 			if u.isGoalState():
-				print("No of Expanded Nodes: " + str(self.expandedDFS))
+				print("No of Expanded Nodes: " + str(self.expanded))
 				print("No of Explored Nodes: " + str(visited.__len__()))
-				self.dfs_parent[TERMINAL_STATE] = u
+				self._parent[TERMINAL_STATE] = u
 				stack.clear()
-				return self.dfs_parent
+				return self._parent
 
 			t = time.time() - start_time
 			# Stops searching after a certain time/node limit 
-			if t > u.CONSTANTS.MAX_TIME or self.expandedDFS > u.CONSTANTS.MAX_NODES:
+			if t > u.CONSTANTS.MAX_TIME or self.expanded > u.CONSTANTS.MAX_NODES:
 				if t > u.CONSTANTS.MAX_TIME:
 					print("%.2fs A fost depasita limita de timp de: %.2fs" % (t, u.CONSTANTS.MAX_TIME))
 				else:
 					print("EXCEEDED NODE LIMIT of %d" % u.CONSTANTS.MAX_NODES)
-				print("No of Expanded Nodes: " + str(self.expandedDFS))
+				print("No of Expanded Nodes: " + str(self.expanded))
 				print("No of Explored Nodes: " + str(visited.__len__()))
 				stack.clear()
 				return {}
@@ -48,11 +46,11 @@ class Graph:
 			for v in u.successors():
 				if (v.missionaries, v.cannibals, v.dir) not in visited.keys():
 					visited[(v.missionaries, v.cannibals, v.dir)] = True
-					self.dfs_parent[v] = u
+					self._parent[v] = u
 					stack.append(v)
 		return {}
 
-	# Prints the path returned by BFS/DFS
+	# Prints the path returned by Function
 	def printPath(self, parentList, tail):
 		if tail is None:
 			return
